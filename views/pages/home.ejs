@@ -1,0 +1,38 @@
+<section class="" id="home">
+  <h1>Halo bro</h1>
+  <div class="container-form">
+    <form action="/register" method="post" class="form">
+      <input name="first_name" type="text" placeholder="First Name" />
+      <input name="last_name" type="text" placeholder="last Name" />
+      <input name="email" type="text" placeholder="email" />
+      <input name="password" type="text" placeholder="password" />
+      <button type="submit">Submit</button>
+    </form>
+    <div class="table-container">
+      <h1>Tabel user</h1>
+      <table>
+        <thead>
+          <tr>
+            <td>No</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Email</td>
+            <td>Password</td>
+          </tr>
+        </thead>
+        <tbody>
+          <% data.forEach(element => { %>
+          <tr>
+            <td><%= element.no %></td>
+            <td><%= element.first_name %></td>
+            <td><%= element.last_name %></td>
+            <td><%= element.email %></td>
+            <td><%= element.password %></td>
+          </tr>
+
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

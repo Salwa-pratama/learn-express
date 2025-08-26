@@ -1,0 +1,35 @@
+.container-form {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  gap: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form input {
+  padding: 10px;
+}
+
+.form button {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: blue;
+  cursor: pointer;
+}
+.form button:active {
+  background-color: gray;
+}
+
+.table-container table thead tr td {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+.table-container table tbody tr td {
+  padding: 10px;
+}

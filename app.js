@@ -12,10 +12,13 @@ const PORT = process.env.PORT || 8080;
 // VIEW ENGINE
 app.set("view engine", "ejs");
 app.use(expressEjsLayouts);
-app.set("layout", "layout");
+
+// Static Folder
+app.use(express.static("public"));
 
 // Middlewere
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // Import router
 import getRouter from "./routes/index.js";
